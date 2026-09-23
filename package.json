@@ -5,16 +5,39 @@
   "license": "MIT",
   "author": "Matteo Cardini",
   "homepage": "https://github.com/matteocardini/imgdiet#readme",
-  "repository": { "type": "git", "url": "git+https://github.com/matteocardini/imgdiet.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteocardini/imgdiet.git"
+  },
   "bugs": "https://github.com/matteocardini/imgdiet/issues",
   "type": "module",
-  "bin": { "imgdiet": "./dist/cli.js" },
+  "bin": {
+    "imgdiet": "dist/cli.js"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
-  "files": ["dist"],
-  "engines": { "node": ">=18" },
-  "keywords": ["images", "performance", "webp", "avif", "cli", "audit", "page-weight", "core-web-vitals"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "images",
+    "performance",
+    "webp",
+    "avif",
+    "cli",
+    "audit",
+    "page-weight",
+    "core-web-vitals"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsx src/cli.ts",
